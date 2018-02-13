@@ -1,0 +1,12 @@
+			<div class="social-buttons">
+				<h4>Share This Deal</h4>
+				<br>
+				<a href="https://twitter.com/intent/tweet?text={{ .Title }} {{ .Param "trip-type" }} trip for just ${{ .Param "price-promo" }}&url={{.Site.BaseURL}}/{{ .Page.URL}}" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn-social btn-t">Twitter</a>
+
+				<a href="https://www.facebook.com/sharer/sharer.php?u={{.Site.BaseURL}}/{{ .Page.URL}}" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" class="btn-social btn-f">Facebook</a>
+
+				<a  href="https://plus.google.com/share?url={{.Site.BaseURL}}/{{ .Page.URL}}" onclick="window.open(this.href, 'mywin',
+'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"  class="btn-social btn-g">Google+</a>
+			</div>

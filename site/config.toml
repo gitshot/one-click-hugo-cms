@@ -1,3 +1,6 @@
-baseurl = "/"
+baseURL = "https://goflyto.com/"
 languageCode = "en-us"
-title = "Homepage"
+title = "Cheap Flight Deals | GoFlyTo"
+theme = "flyto"
+metaDataFormat= "yaml"
+buildDrafts = true

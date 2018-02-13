@@ -1,0 +1,25 @@
+
+/* Font */
+@font-face {
+    font-family: 'hello';
+    src: url('fonts/avenir/avenirltstd-book-webfont.eot');
+    src: url('fonts/avenir/avenirltstd-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/avenir/avenirltstd-book-webfont.woff') format('woff'),
+         url('fonts/avenir/avenirltstd-book-webfont.ttf') format('truetype'),
+         url('fonts/avenir/avenirltstd-book-webfont.svg#avenir_lt_std45_book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hello';
+    src: url('fonts/avenir/avenirltstd-black-webfont.eot');
+    src: url('fonts/avenir/avenirltstd-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/avenir/avenirltstd-black-webfont.woff') format('woff'),
+         url('fonts/avenir/avenirltstd-black-webfont.ttf') format('truetype'),
+         url('fonts/avenir/avenirltstd-black-webfont.svg#avenir_lt_std45_book') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+

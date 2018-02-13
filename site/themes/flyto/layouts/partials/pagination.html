@@ -1,0 +1,16 @@
+		<div id="pagination">
+				{{ if .Paginator.HasPrev }}
+
+		    <a class="btn btn-pag" href="{{ .Paginator.Prev.URL }}">
+		        < New Deals
+		    </a>
+		{{ end }}
+		{{ if .Paginator.HasNext }}
+		    <a class="btn btn-pag" href="{{ .Paginator.Next.URL }}">
+		        More Deals >
+		    </a>
+	{{ end }}
+
+		 </div>
+
+

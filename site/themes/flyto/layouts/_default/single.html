@@ -1,0 +1,65 @@
+{{ partial "header" . }}
+
+	<div class="container" id="single">
+		<div id="content-container">
+			<div class="content">
+				<h1>{{ .Title }} {{ .Param "trip-type" }} Trip for ${{ .Param "price-promo" }}</h1>
+				<hr>
+				<ul class="airports">
+					<li>
+						<span class="lable">Depart</span>
+						<span class="text">{{ .Param "airport-depart" }}</span>
+					</li>
+					<li>
+						<span class="lable">Arrive</span>
+						<span class="text">{{ .Param "airport-arrive" }}</span>
+					</li>
+					<li>
+						<span class="lable">Return</span>
+						<span class="text">{{ .Param "airport-return" }}</span>
+					</li>
+				</ul>
+				<hr>
+				<span class="date-lable">Dates</span>
+
+				<span class="dates">{{ .Param "date-arrive" }}</span>
+				<span>-</span>
+				<span class="dates">{{ .Param "date-return" }}</span>
+				<hr>
+				<ul class="airports">
+					<li>
+						<span class="lable">Airline</span>
+						<span class="text">{{ .Param "airline-name" }}</span>
+					</li>
+					<li>
+						<span class="lable">stops</span>
+						<span class="text">{{ .Param "airline-stops" }}</span>
+					</li>
+	
+				</ul>
+
+				<a href="{{ .Param "deal-url" }}" target="_new" class="btn">Book Now</a>
+			</div>
+
+			<!-- Social  -->
+			{{ partial "social-btn" . }}
+
+			<div class="notice">
+				<p>Please note, all the information on this page is accurate at the time of publication.
+If you are viewing this deal at a later date, the price and availability may no longer be as advertised.</p>
+			</div>
+		</div>
+
+		<div id="sidebar">
+			{{ partial "card" . }}
+		</div>
+	</div>
+
+<footer class="navigation">
+
+	<div class="container"><p>GoFlyTo.com &copy; 2018 </p></div>
+
+</footer>
+
+</body>
+</html>

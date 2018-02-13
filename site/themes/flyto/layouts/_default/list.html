@@ -1,0 +1,27 @@
+
+{{ partial "header" . }}
+
+	<div class="container">
+		<div class="hero">
+					<h1>flights departures from <br> {{ .Title }}</h1>
+					<p class="lead">These fares will go up in the next 24 hours or so.
+</p>
+		
+	
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="grid">
+
+			{{ range first 10 .Data.Pages }}
+					{{ partial "card" . }}
+			{{ end }}
+
+	
+		</div>
+				{{ partial "pagination" . }}
+	</div>
+
+	{{ partial "footer" . }}

@@ -1,0 +1,28 @@
+{{ partial "header" . }}
+
+	<div class="container">
+		<div class="hero">
+			<h1>Fly Cheap and Save Hundreds of Dollars Per Ticket</h1>
+			<p class="lead"> No signup. completely free. totally safe.</p>
+		
+				{{ partial "menu" . }}	
+
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="grid">
+
+{{ range first 12 .Data.Pages }}
+		{{ partial "card" . }}
+{{ end }}
+
+		</div>
+				{{ partial "pagination" . }}
+
+	</div>
+
+
+
+
+	{{ partial "footer" . }}

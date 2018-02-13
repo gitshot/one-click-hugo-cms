@@ -1,0 +1,24 @@
+<div class="card">
+				<a href="{{ .URL }}">
+				<span class="normal-price">${{ .Param "price-normal"}}</span>
+				<span class="promo-price">${{ .Param "price-promo"}}</span>
+
+				<h2>{{ .Title }}</h2>
+				<div class="dates">
+					<div>
+						<span class="date-type">Arrive</span>
+						<span class="date">{{ .Param "date-arrive" }}</span>
+					</div>
+					<div>
+						<span class="date-type">Return</span>
+						<span class="date">{{ .Param "date-return" }}</span>
+					</div>
+				</div>
+				<div class="depart-letters">
+					<span class="depart-from">{{ .Param "trip-from" }}</span>	
+						<span class="flight-icon">{{ partial "flight-svg" }}</span> 
+					<span class="depart-to">{{ .Param "trip-to" }}</span>
+					<span class="trip-type">{{ .Param "trip-type" }} Trip</span>
+				</div>
+				</a>
+</div>
